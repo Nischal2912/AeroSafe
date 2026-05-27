@@ -1,0 +1,6 @@
+{
+  "name": "AeroSafe Insights",
+  "description": "Global aviation incident analysis dashboard with interactive visualizations and AI-powered safety summaries.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

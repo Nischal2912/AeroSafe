@@ -1,0 +1,341 @@
+export interface Incident {
+  id: string;
+  date: string;
+  location: string;
+  operator: string;
+  aircraftType: string;
+  severity: 'Fatal' | 'Non-Fatal' | 'Incident';
+  fatalities: number;
+  occupants: number;
+  phase: string;
+  summary: string;
+  continent: string;
+}
+
+export const aviationIncidents: Incident[] = [
+  {
+    id: "1",
+    date: "2024-03-12",
+    location: "Miami, USA",
+    operator: "Amerijet International",
+    aircraftType: "Boeing 767",
+    severity: "Incident",
+    fatalities: 0,
+    occupants: 3,
+    phase: "Takeoff",
+    summary: "Engine failure shortly after departure. Safely returned to airport.",
+    continent: "North America"
+  },
+  {
+    id: "2",
+    date: "2023-11-20",
+    location: "Amazon Rainforest, Brazil",
+    operator: "Private",
+    aircraftType: "Cessna 208 Caravan",
+    severity: "Fatal",
+    fatalities: 12,
+    occupants: 12,
+    phase: "En Route",
+    summary: "Loss of control due to severe weather. No survivors found.",
+    continent: "South America"
+  },
+  {
+    id: "3",
+    date: "2023-08-04",
+    location: "Mumbai, India",
+    operator: "Air India Express",
+    aircraftType: "Boeing 737-800",
+    severity: "Incident",
+    fatalities: 0,
+    occupants: 184,
+    phase: "Landing",
+    summary: "Tail strike during go-around attempt. Significant damage but no injuries.",
+    continent: "Asia"
+  },
+  {
+    id: "4",
+    date: "2022-05-30",
+    location: "Kathmandu, Nepal",
+    operator: "Tara Air",
+    aircraftType: "DHC-6 Twin Otter",
+    severity: "Fatal",
+    fatalities: 22,
+    occupants: 22,
+    phase: "Approach",
+    summary: "Controlled flight into terrain (CFIT) in mountainous conditions.",
+    continent: "Asia"
+  },
+  {
+    id: "5",
+    date: "2022-01-09",
+    location: "Tehran, Iran",
+    operator: "Caspian Airlines",
+    aircraftType: "Boeing 737-400",
+    severity: "Non-Fatal",
+    fatalities: 0,
+    occupants: 126,
+    phase: "Landing",
+    summary: "Runway excursion due to landing gear collapse. Successful evacuation.",
+    continent: "Asia"
+  },
+  {
+    id: "6",
+    date: "2021-11-17",
+    location: "Mediterranean Sea",
+    operator: "Royal Air Force",
+    aircraftType: "F-35B Lightning II",
+    severity: "Incident",
+    fatalities: 0,
+    occupants: 1,
+    phase: "Takeoff",
+    summary: "Aircraft crashed during launch from carrier due to intake cover blockage. Pilot ejected.",
+    continent: "Europe"
+  },
+  {
+    id: "7",
+    date: "2020-08-07",
+    location: "Kozhikode, India",
+    operator: "Air India Express",
+    aircraftType: "Boeing 737",
+    severity: "Fatal",
+    fatalities: 21,
+    occupants: 190,
+    phase: "Landing",
+    summary: "Overshot runway during heavy rain and fell into a gorge.",
+    continent: "Asia"
+  },
+  {
+    id: "8",
+    date: "2020-01-08",
+    location: "Tehran, Iran",
+    operator: "Ukraine International Airlines",
+    aircraftType: "Boeing 737-800",
+    severity: "Fatal",
+    fatalities: 176,
+    occupants: 176,
+    phase: "Climb",
+    summary: "Shot down by surface-to-air missile shortly after takeoff.",
+    continent: "Asia"
+  },
+  {
+    id: "9",
+    date: "2019-03-10",
+    location: "Bishoftu, Ethiopia",
+    operator: "Ethiopian Airlines",
+    aircraftType: "Boeing 737 MAX 8",
+    severity: "Fatal",
+    fatalities: 157,
+    occupants: 157,
+    phase: "Climb",
+    summary: "Uncommanded nose-down input due to MCAS software failure.",
+    continent: "Africa"
+  },
+  {
+    id: "10",
+    date: "2018-10-29",
+    location: "Java Sea, Indonesia",
+    operator: "Lion Air",
+    aircraftType: "Boeing 737 MAX 8",
+    severity: "Fatal",
+    fatalities: 189,
+    occupants: 189,
+    phase: "Climb",
+    summary: "Loss of control due to faulty sensor and MCAS activation.",
+    continent: "Asia"
+  },
+  {
+    id: "11",
+    date: "2018-05-18",
+    location: "Havana, Cuba",
+    operator: "Cubana de Aviación",
+    aircraftType: "Boeing 737-200",
+    severity: "Fatal",
+    fatalities: 112,
+    occupants: 113,
+    phase: "Takeoff",
+    summary: "Stalled during initial climb due to excessive rotation.",
+    continent: "North America"
+  },
+  {
+    id: "12",
+    date: "2017-01-16",
+    location: "Bishkek, Kyrgyzstan",
+    operator: "ACT Airlines",
+    aircraftType: "Boeing 747-400F",
+    severity: "Fatal",
+    fatalities: 39,
+    occupants: 4,
+    phase: "Landing",
+    summary: "Missed approach in fog, crashed into residential area.",
+    continent: "Asia"
+  },
+  {
+    id: "13",
+    date: "2016-11-28",
+    location: "La Unión, Colombia",
+    operator: "LaMia",
+    aircraftType: "Avro RJ85",
+    severity: "Fatal",
+    fatalities: 71,
+    occupants: 77,
+    phase: "Approach",
+    summary: "Fuel exhaustion leading to total engine failure.",
+    continent: "South America"
+  },
+  {
+    id: "14",
+    date: "2015-03-24",
+    location: "French Alps, France",
+    operator: "Germanwings",
+    aircraftType: "Airbus A320",
+    severity: "Fatal",
+    fatalities: 150,
+    occupants: 150,
+    phase: "En Route",
+    summary: "Intentional crash by co-pilot.",
+    continent: "Europe"
+  },
+  {
+    id: "15",
+    date: "2014-03-08",
+    location: "Indian Ocean",
+    operator: "Malaysia Airlines",
+    aircraftType: "Boeing 777",
+    severity: "Fatal",
+    fatalities: 239,
+    occupants: 239,
+    phase: "En Route",
+    summary: "Disappeared from radar; wreckage suspected in Southern Indian Ocean.",
+    continent: "Oceania"
+  },
+  {
+    id: "16",
+    date: "2014-07-17",
+    location: "Hrabove, Ukraine",
+    operator: "Malaysia Airlines",
+    aircraftType: "Boeing 777",
+    severity: "Fatal",
+    fatalities: 298,
+    occupants: 298,
+    phase: "En Route",
+    summary: "Shot down by Buk surface-to-air missile over conflict zone.",
+    continent: "Europe"
+  },
+  {
+    id: "17",
+    date: "2013-07-06",
+    location: "San Francisco, USA",
+    operator: "Asiana Airlines",
+    aircraftType: "Boeing 777-200ER",
+    severity: "Fatal",
+    fatalities: 3,
+    occupants: 307,
+    phase: "Landing",
+    summary: "Struck seawall during approach due to pilot error in energy management.",
+    continent: "North America"
+  },
+  {
+    id: "18",
+    date: "2012-06-03",
+    location: "Lagos, Nigeria",
+    operator: "Dana Air",
+    aircraftType: "McDonnell Douglas MD-83",
+    severity: "Fatal",
+    fatalities: 163,
+    occupants: 153,
+    phase: "Approach",
+    summary: "Dual engine failure and crashed into residential buildings.",
+    continent: "Africa"
+  },
+  {
+    id: "19",
+    date: "2011-09-07",
+    location: "Yaroslavl, Russia",
+    operator: "Yak Service",
+    aircraftType: "Yakovlev Yak-42",
+    severity: "Fatal",
+    fatalities: 44,
+    occupants: 45,
+    phase: "Takeoff",
+    summary: "Crashed shortly after takeoff due to pilot applying brakes during rotation.",
+    continent: "Europe"
+  },
+  {
+    id: "20",
+    date: "2009-06-01",
+    location: "Atlantic Ocean",
+    operator: "Air France",
+    aircraftType: "Airbus A330",
+    severity: "Fatal",
+    fatalities: 228,
+    occupants: 228,
+    phase: "En Route",
+    summary: "Pitot tube icing led to incorrect airspeed readings and pilot-induced stall.",
+    continent: "Europe"
+  },
+  {
+    id: "21",
+    date: "2009-01-15",
+    location: "New York, USA",
+    operator: "US Airways",
+    aircraftType: "Airbus A320",
+    severity: "Non-Fatal",
+    fatalities: 0,
+    occupants: 155,
+    phase: "Climb",
+    summary: "Bird strike in both engines; successful ditching in Hudson River.",
+    continent: "North America"
+  },
+  {
+    id: "22",
+    date: "2008-08-20",
+    location: "Madrid, Spain",
+    operator: "Spanair",
+    aircraftType: "McDonnell Douglas MD-82",
+    severity: "Fatal",
+    fatalities: 154,
+    occupants: 172,
+    phase: "Takeoff",
+    summary: "Failed to deploy flaps/slats for takeoff; take-off warning system failed.",
+    continent: "Europe"
+  },
+  {
+    id: "23",
+    date: "2007-07-17",
+    location: "São Paulo, Brazil",
+    operator: "TAM Airlines",
+    aircraftType: "Airbus A320",
+    severity: "Fatal",
+    fatalities: 199,
+    occupants: 187,
+    phase: "Landing",
+    summary: "Overran runway and struck warehouse due to mismatched thrust lever positions.",
+    continent: "South America"
+  },
+  {
+    id: "24",
+    date: "2005-08-14",
+    location: "Grammatiko, Greece",
+    operator: "Helios Airways",
+    aircraftType: "Boeing 737-300",
+    severity: "Fatal",
+    fatalities: 121,
+    occupants: 121,
+    phase: "En Route",
+    summary: "Gradual decompression led to crew incapacitation (hypoxia). Fuel exhaustion.",
+    continent: "Europe"
+  },
+  {
+    id: "25",
+    date: "2001-11-12",
+    location: "Queens, USA",
+    operator: "American Airlines",
+    aircraftType: "Airbus A300",
+    severity: "Fatal",
+    fatalities: 265,
+    occupants: 260,
+    phase: "Climb",
+    summary: "Vertical stabilizer separation due to pilot over-use of rudder in wake turbulence.",
+    continent: "North America"
+  }
+];
